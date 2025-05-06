@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daten in MySQL_DB speichern</title>
+</head>
+<body>
+    <h1>Apfelkauf um Obstladen</h1>
+    <p>Bitte geben Sie folgende Daten für Ihre Bestellung ein</p>
+    <form action="bestellung_db.php" method="post">
+        <p>Vorname: <input type="text" name="vorname"></p>
+        <p>Nachname: <input type="text" name="nachname"></p>
+        <p>Wohnort: <input type="text" name="ort"></p>
+        <p>Menge (in kg): <input type="text" name="menge"></p>
+        <p>Apfelsorten:
+            <input type="radio" name="sorte" value="Jonagold">Jonagold
+            <input type="radio" name="sorte" value="Gala">Gala
+            <input type="radio" name="sorte" value="Elstar">Elstar
+        </p>
+        <p><input type="submit" value="Abschicken"></p>
+    </form>
+</body>
+</html>
